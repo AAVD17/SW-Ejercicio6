@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <tittle>Sumando todos los numeros</tittle>
+        <h4>Numeros</h4>
+        <br><br>
+        <input type="texto" placeholder="Escribe un numero" id="Num1"><br><br>
+        <input type="texto" placeholder="Escribe un numero" id="Num2"><br><br>
+        <input type="texto" placeholder="Escribe un numero" id="Num3"><br><br>
+        <input type="texto" placeholder="Escribe un numero" id="Num4"><br><br>
+        <input type="button" name="name" value="Presionar!" onclick="Pluss();">
+    </head>
+    <body>
+        <script type="text/javascript">
+        function Pluss()
+        {
+            var Num1=parseInt(document.getElementById('Num1').value);
+            var Num2=parseInt(document.getElementById('Num2').value);
+            var Num3=parseInt(document.getElementById('Num3').value);
+            var Num4=parseInt(document.getElementById('Num4').value);
+            var Resultado;
+            Resultado=Num1+Num2+Num3+Num4;
+            alert("El resultado de la operacion es: "+Resultado);
+        }
+///Multiplicacion de numero par///
+
+        m1 = document.getElementById("multiplicando").value;
+        m2 = document.getElementById("multiplicador").value;
+        r=m1*m2;
+            document.getElementById("resultado").value = r;
+            function multiplicar(){
+            m1 = document.getElementById("multiplicando").value;
+            m2 = document.getElementById("multiplicador").value;
+        r = m1*m2;
+            document.getElementById("resultado").value = r;
+}
+///Lista de numeros primos y no primos///
+var cantidad = 100,j=2;
+for(var i=2;i<cantidad;i++) {      
+    for(;j<cantidad;j++) {        
+        if(j%i==0 && (i==j || i==1)) {          
+            console.log(j);          
+        }         
+    }            
+}
+
+
+        </script>
+        
+    </body>
+    
+</html>
