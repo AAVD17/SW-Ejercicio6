@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <body style="background-color:#00ffc8;">
+</body>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <tittle>Condicionales y ciclos</tittle>
+        <script>
+            var arreglo=[];
+            var SumaT=0;
+            var MP=1;
+            var SI=0;
+            var primo=0;
+            var LP = ' ';
+            var LNP= ' ';
+            //La suma de todos los números//
+            for(var c=0;c<20;c++){
+                arreglo[c]=Math.round(Math.random()*100);
+                alert('Numero: '+arreglo[c]);
+                SumaT+=arreglo[c];
+                //La multiplicación de los números pares//
+                if(arreglo[c]%2==0){
+                    MP=MP*arreglo[C];
+                }
+                else
+                    SI+=arreglo[c];
+
+                }
+                //Verificamos los números primos//
+                primo=0 
+                 for (var i=1;i<arreglo[c];i++){
+                     if(arreglo[c]%i==0){
+                         primo+=1;
+                    }
+                }
+                //Verificamos los números que no son primos//
+
+                 if(primo>2){
+                     LP+='-'+arreglo[c];
+                 }
+                //Verificamos la lista de los números primos//
+                    else{
+                        LNP+='-'+arreglo[c];
+                    }
+            
+            alert('La suma total del arreglo es: '+SumaT);
+            alert('La multiplicación de números pares es: '+MP);
+            alert('La suma de los números impares es: '+SI);
+            alert('Los numeros que no son primos: '+LP);
+            alert('La lista de los números que son primos es: '+LNP);
+        </script>        
+    </body>
+</html>
